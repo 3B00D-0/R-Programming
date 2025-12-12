@@ -225,6 +225,7 @@ print(a <= b)  # Less or Equal
 ### 3. Logical Operators (العمليات المنطقية)
 
 Used to combine multiple conditions.
+
 ![licensed-image](https://github.com/user-attachments/assets/75253b2e-bc87-4be8-80ba-745d98d55337)
 
 - `&` **(Element-wise AND):** Checks every item in a list.
@@ -948,6 +949,7 @@ chisq.test(car_data)
 ### 3. Correlation (الارتباط)
 
 Measures the relationship between two variables.
+
 ![licensed-image](https://github.com/user-attachments/assets/f446d4bd-d0ad-41a6-b816-62ef12d932aa)
 
 **Correlation Coefficient (r):**
