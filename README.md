@@ -1,6 +1,5 @@
 Here is the complete **Part 1 (Chapters 1-5)** with the requested outputs added under each code example. This format is ready to copy directly into Obsidian.
 
----
 
 ## **Chapter 1: The Foundations (أساسيات البيانات)**
 
@@ -31,7 +30,6 @@ Before writing code, we must define **Data**. In your "Statistics" file, data is
         - _Classroom Example:_ Ratings (Excellent, Good, Poor), T-Shirt Size (S, M, L) 4.
             
 
----
 
 ## **Chapter 2: The Grammar of R (قواعد لغة R)**
 
@@ -126,7 +124,6 @@ Enter age: 17
 [1] "Hi, Mary next year you will be 18 years old."
 ```
 
----
 
 ## **Chapter 3: The Toolkit (Operators)**
 
@@ -234,7 +231,6 @@ print(!a)     # Flips TRUE to FALSE
 [1] FALSE TRUE FALSE FALSE # NOT result
 ```
 
----
 
 ## **Chapter 4: Organizing the Classroom (Data Structures)**
 
@@ -334,7 +330,6 @@ print(factor_data)
 Levels: A B C
 ```
 
----
 
 ## **Chapter 5: Controlling Flow (التحكم في التكرار والقرارات)**
 
@@ -468,7 +463,6 @@ for (val in x) {
 ```
 
 
----
 
 ## **Chapter 6: The Toolkit (Functions)**
 
@@ -581,7 +575,6 @@ new.function(5)
 [1] 25
 ```
 
----
 
 ## **Chapter 7: Handling Real Files (التعامل مع الملفات)**
 
@@ -652,7 +645,6 @@ R needs a special package called `xlsx` to read Excel files.
 - **XML:** Use the `XML` package and `xmlToDataFrame()` function.
     
 
----
 
 ## **Chapter 8: The Analyst at Work (الإحصاء والتحليل)**
 
