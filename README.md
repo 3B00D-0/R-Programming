@@ -834,10 +834,10 @@ print(mode(data))
 
 #### B. Dispersion (التشتت)
 
+How "spread out" is the data?
+
 <img width="531" height="322" alt="image" src="https://github.com/user-attachments/assets/690c93b6-53c2-4e0b-ae85-39dd7bda9662" />
 
-
-How "spread out" is the data?
 
 - **Variance (σ²):** How far numbers are from the mean.
 - **Standard Deviation (σ):** The average distance from the mean (square root of variance).
