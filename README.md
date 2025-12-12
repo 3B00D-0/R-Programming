@@ -1,54 +1,44 @@
-## **Chapter 1: The Foundations (أساسيات البيانات)**
+Here is the complete course (Part 1 and Part 2) combined into a single, clean markdown file. You can copy this entire block directly into GitHub (e.g., `README.md`) or Obsidian.
 
-Before writing code, we must define **Data**. In your "Statistics" file, data is split into two main types. This is the language you will use to describe your variables.
+````markdown
+# The STEM Teacher’s Guide to R Programming
 
-### **1. Types of Data (أنواع البيانات)**
+## Chapter 1: The Foundations (أساسيات البيانات)
 
-- **Quantitative (كمي):** Numbers you can count or measure.
-    
-    - **Discrete (منفصل):** Whole numbers only.
-        
-        - _Classroom Example:_ Number of students (You can't have 2.5 students) 1.
-            
-    - **Continuous (مستمر):** Decimals are allowed.
-        
-        - _Classroom Example:_ Height (150.5 cm), Weight, Salary 2.
-            
-- **Qualitative (نوعي):** Categories or labels (No math allowed).
-    
-    - **Nominal (اسمي):** Categories with **no order**.
-        
-        - _Classroom Example:_ Gender (Male/Female), Eye Color 3.
-            
-    - **Ordinal (ترتيبي):** Categories **with a ranking order**.
-        
-        - _Classroom Example:_ Ratings (Excellent, Good, Poor), T-Shirt Size (S, M, L) 4.
-            
+Before writing code, we must define **Data**. Data is split into two main types. This is the language you will use to describe your variables.
 
+### 1. Types of Data (أنواع البيانات)
 
-## **Chapter 2: The Grammar of R (قواعد لغة R)**
+* **Quantitative (كمي):** Numbers you can count or measure.
+    * **Discrete (منفصل):** Whole numbers only.
+        * *Classroom Example:* Number of students (You can't have 2.5 students).
+    * **Continuous (مستمر):** Decimals are allowed.
+        * *Classroom Example:* Height (150.5 cm), Weight, Salary.
 
+* **Qualitative (نوعي):** Categories or labels (No math allowed).
+    * **Nominal (اسمي):** Categories with **no order**.
+        * *Classroom Example:* Gender (Male/Female), Eye Color.
+    * **Ordinal (ترتيبي):** Categories **with a ranking order**.
+        * *Classroom Example:* Ratings (Excellent, Good, Poor), T-Shirt Size (S, M, L).
+
+---
+
+## Chapter 2: The Grammar of R (قواعد لغة R)
 
 To speak to R, you need to know how to create "words" (Variables) and "sentences" (Assignments).
 
-### **1. Variables (المتغيرات)**
+### 1. Variables (المتغيرات)
 
 A variable is a container. You name it, and you store data inside it.
 
-- **Valid Names (أسماء صحيحة):** `var_name`, `var.name`, `var_name2`.
-    
-- **Invalid Names (أسماء خاطئة):**
-    
-    - `2var_name` (Cannot start with a number).
-        
-    - `_var_name` (Cannot start with underscore).
-        
-    - `var_name%` (Cannot contain special symbols like %).
-        
+* **Valid Names (أسماء صحيحة):** `var_name`, `var.name`, `var_name2`
+* **Invalid Names (أسماء خاطئة):**
+    * `2var_name` (Cannot start with a number)
+    * `_var_name` (Cannot start with underscore)
+    * `var_name%` (Cannot contain special symbols like %)
 
-How to Assign Values (التعيين):
-
-You can use <- (Left Arrow) or = (Equal sign). The course emphasizes the arrow.
+#### How to Assign Values (التعيين)
+You can use `<-` (Left Arrow) or `=` (Equal sign). The course emphasizes the arrow.
 
 ```r
 # Assignment using arrow (Preferred)
@@ -60,30 +50,30 @@ variable.1 = 124
 # Printing values
 print(variable.1)
 cat("variable.2 is", variable.2)
-```
+````
 
 **Output:**
 
-```
+```text
 [1] 124
 variable.2 is Learn R Programming
 ```
 
-### **2. Data Types in R (أنواع البيانات داخل R)**
+### 2\. Data Types in R (أنواع البيانات داخل R)
 
 When you store something, R automatically gives it a "Type".
 
-|**Type**|**Arabic**|**Definition**|**Course Example**|
-|---|---|---|---|
-|**Numeric**|رقمي|Any number (decimals included).|`12`, `32`, `5432`|
-|**Integer**|صحيح|Whole numbers. **Must add 'L'**.|`3L`, `66L`, `2346L`|
-|**Character**|نصي|Text. Must use quotes.|`"good"`, `"TRUE"`, `'35.4'`|
-|**Logical**|منطقي|True or False.|`TRUE`, `FALSE`|
-|**Complex**|مركب|Math with imaginary numbers.|`1+2i`|
+| Type | Arabic | Definition | Course Example |
+| :--- | :--- | :--- | :--- |
+| **Numeric** | رقمي | Any number (decimals included). | `12`, `32`, `5432` |
+| **Integer** | صحيح | Whole numbers. **Must add 'L'**. | `3L`, `66L`, `2346L` |
+| **Character** | نصي | Text. Must use quotes. | `"good"`, `"TRUE"`, `'35.4'` |
+| **Logical** | منطقي | True or False. | `TRUE`, `FALSE` |
+| **Complex** | مركب | Math with imaginary numbers. | `1+2i` |
 
-Checking the Type:
+#### Checking the Type
 
-Use the class() function to ask R "What type is this?".
+Use the `class()` function to ask R "What type is this?".
 
 ```r
 variable_y <- 124
@@ -92,11 +82,11 @@ cat("The data type is", class(variable_y))
 
 **Output:**
 
-```
+```text
 The data type is numeric
 ```
 
-### **3. User Input (إدخال البيانات من المستخدم)**
+### 3\. User Input (إدخال البيانات من المستخدم)
 
 You can ask the user to type something using `readline()`.
 
@@ -112,19 +102,19 @@ print(paste("Hi,", my.name, "next year you will be", my.age+1))
 
 **Output:** (Assuming user types "Mary" and "17")
 
-```
+```text
 Enter name: Mary
 Enter age: 17
 [1] "Hi, Mary next year you will be 18 years old."
 ```
 
+-----
 
-## **Chapter 3: The Toolkit (Operators)**
-
+## Chapter 3: The Toolkit (Operators)
 
 Operators are the symbols used to do math or compare logic.
 
-### **1. Arithmetic Operators (العمليات الحسابية)**
+### 1\. Arithmetic Operators (العمليات الحسابية)
 
 Used for math calculations.
 
@@ -157,17 +147,17 @@ print(a ^ b)
 
 **Output:**
 
-```
-[1] 13.0 8.3 7.0          # Addition
-[1] -9.0 -1.7 1.0         # Subtraction
-[1] 22.0 16.5 12.0        # Multiplication
-[1] 0.18 0.66 1.33        # Division
-[1] 2.0 3.3 1.0           # Remainder
-[1] 0 0 1                 # Integer Division
-[1] 2048.0 391.3 64.0     # Power
+```text
+[1] 13.0 8.3 7.0          
+[1] -9.0 -1.7 1.0         
+[1] 22.0 16.5 12.0        
+[1] 0.18 0.66 1.33        
+[1] 2.0 3.3 1.0           
+[1] 0 0 1                 
+[1] 2048.0 391.3 64.0     
 ```
 
-### **2. Relational Operators (عمليات المقارنة)**
+### 2\. Relational Operators (عمليات المقارنة)
 
 These return `TRUE` or `FALSE`.
 
@@ -185,27 +175,22 @@ print(a <= b)  # Less or Equal
 
 **Output:**
 
-```
-[1] FALSE FALSE FALSE   # Greater than
-[1] TRUE TRUE TRUE      # Less than
-[1] FALSE FALSE FALSE   # Equal to
-[1] TRUE TRUE TRUE      # Not Equal to
+```text
+[1] FALSE FALSE FALSE   
+[1] TRUE TRUE TRUE      
+[1] FALSE FALSE FALSE   
+[1] TRUE TRUE TRUE      
 ```
 
-### **3. Logical Operators (العمليات المنطقية)**
+### 3\. Logical Operators (العمليات المنطقية)
 
 Used to combine multiple conditions.
 
-- `&` **(AND - Element-wise):** Checks every single item in a list.
-    
-- `|` **(OR - Element-wise):** Checks every single item.
-    
-- `!` **(NOT):** Reverses the result.
-    
-- `&&` **(AND - Single):** Checks only the **first** element (Good for `if` statements).
-    
-- `||` **(OR - Single):** Checks only the **first** element.
-    
+  * `&` **(AND - Element-wise):** Checks every single item in a list.
+  * `|` **(OR - Element-wise):** Checks every single item.
+  * `!` **(NOT):** Reverses the result.
+
+<!-- end list -->
 
 ```r
 a <- c(3, 0, TRUE, 2+2i)
@@ -218,19 +203,19 @@ print(!a)     # Flips TRUE to FALSE
 
 **Output:**
 
+```text
+[1] TRUE FALSE TRUE TRUE  
+[1] TRUE TRUE TRUE TRUE   
+[1] FALSE TRUE FALSE FALSE 
 ```
-[1] TRUE FALSE TRUE TRUE  # AND result
-[1] TRUE TRUE TRUE TRUE   # OR result
-[1] FALSE TRUE FALSE FALSE # NOT result
-```
 
+-----
 
-## **Chapter 4: Organizing the Classroom (Data Structures)**
-
+## Chapter 4: Organizing Data (Data Structures)
 
 R has specific ways to organize groups of data.
 
-### **1. Vectors (المتجهات)**
+### 1\. Vectors (المتجهات)
 
 A single row of data. **Must be all the same type**.
 
@@ -245,7 +230,7 @@ character_vector <- c("apple", "banana", "orange")
 logical_vector <- c(TRUE, FALSE, TRUE)
 ```
 
-### **2. Lists (القوائم)**
+### 2\. Lists (القوائم)
 
 A mixed bag. Can hold numbers, text, and logic all at once.
 
@@ -259,11 +244,11 @@ print(my_list$name)
 
 **Output:**
 
-```
+```text
 [1] "John"
 ```
 
-### **3. Matrices (المصفوفات)**
+### 3\. Matrices (المصفوفات)
 
 A grid (rows and columns) of the **same data type**.
 
@@ -275,14 +260,14 @@ print(mat)
 
 **Output:**
 
-```
+```text
      [,1] [,2] [,3]
 [1,]    1    4    7
 [2,]    2    5    8
 [3,]    3    6    9
 ```
 
-### **4. Data Frames (إطارات البيانات)**
+### 4\. Data Frames (إطارات البيانات)
 
 The most important structure. Like an Excel sheet with columns of different types.
 
@@ -298,14 +283,14 @@ print(df)
 
 **Output:**
 
-```
+```text
      name age gender
 1   Alice  25      F
 2     Bob  30      M
 3 Charlie  35      M
 ```
 
-### **5. Factors (الفئات)**
+### 5\. Factors (الفئات)
 
 Used for categorical data (Ordinal/Nominal). It stores text as levels (numbers) internally to save memory.
 
@@ -317,16 +302,16 @@ print(factor_data)
 
 **Output:**
 
-```
+```text
 [1] A B A C
 Levels: A B C
 ```
 
+-----
 
-## **Chapter 5: Controlling Flow (التحكم في التكرار والقرارات)**
+## Chapter 5: Controlling Flow (التحكم في التكرار والقرارات)
 
-
-### **1. Decisions (If / Else)**
+### 1\. Decisions (If / Else)
 
 ```r
 x <- 24
@@ -345,11 +330,11 @@ if (x %% 2 == 0) {
 
 **Output:**
 
-```
+```text
 24 is an even number
 ```
 
-Switch Statement:
+#### Switch Statement
 
 Useful for menus or specific choices.
 
@@ -368,13 +353,15 @@ result <- switch(
 
 **Output:**
 
-```
+```text
 Addition = 12
 ```
 
-### **2. Loops (التكرار)**
+### 2\. Loops (التكرار)
 
-**For Loop:** (Repeat a specific number of times)
+#### For Loop
+
+Repeat a specific number of times.
 
 ```r
 fruit <- c('Apple', 'Orange', 'Guava')
@@ -385,13 +372,15 @@ for (i in fruit) {
 
 **Output:**
 
-```
+```text
 [1] "Apple"
 [1] "Orange"
 [1] "Guava"
 ```
 
-**While Loop:** (Repeat while a condition is true)
+#### While Loop
+
+Repeat while a condition is true.
 
 ```r
 cnt <- 2
@@ -403,13 +392,15 @@ while (cnt < 5) {
 
 **Output:**
 
-```
+```text
 [1] "Hello"
 [1] "Hello"
 [1] "Hello"
 ```
 
-**Repeat Loop with Break:** (Repeat forever until you tell it to stop)
+#### Repeat Loop with Break
+
+Repeat forever until you tell it to stop.
 
 ```r
 cnt <- 2
@@ -426,13 +417,15 @@ repeat {
 
 **Output:**
 
-```
+```text
 [1] "Hello"
 [1] "Hello"
 [1] "Hello"
 ```
 
-**Next Statement:** (Skip this round)
+#### Next Statement
+
+Skip the current round and move to the next.
 
 ```r
 x <- 1:5
@@ -446,88 +439,111 @@ for (val in x) {
 
 **Output:**
 
-```
+```text
 [1] 1
 [1] 2
 [1] 4
 [1] 5
 ```
 
+-----
 
-
-## **Chapter 6: The Toolkit (Functions)**
-
+## Chapter 6: The Toolkit (Functions)
 
 A **Function (الدالة)** is like a machine. You put raw materials in (Arguments), the machine does the work (Body), and it gives you a finished product (Return Value).
 
-### **1. Built-in Functions (أدوات جاهزة)**
+### 1\. Built-in Functions (أدوات جاهزة)
 
 R has many tools ready for you to use.
 
-**Math Functions (دوال رياضية)**
+#### Math Functions (دوال رياضية)
 
-- `abs(x)`: Returns the absolute (positive) value.
-    
-- `sqrt(x)`: Returns the square root.
-    
-- `ceiling(x)`: Rounds **up** to the nearest integer.
-    
-- `floor(x)`: Rounds **down** to the nearest integer.
-    
+  * `abs(x)`: Returns the absolute (positive) value.
+  * `sqrt(x)`: Returns the square root.
+  * `ceiling(x)`: Rounds **up** to the nearest integer.
+  * `floor(x)`: Rounds **down** to the nearest integer.
+  * `trunc(x)`: Cuts off the decimals (truncates).
+  * `round(x, digits=n)`: Rounds to a specified number of decimal places.
+
+<!-- end list -->
 
 ```r
-x <- -4.5
-print(abs(x))      # Absolute value
-print(ceiling(x))  # Round Up
-print(floor(x))    # Round Down
-print(sqrt(16))    # Square Root
+x <- -4
+print(abs(x))      
+
+x <- 4.5
+print(ceiling(x))  
+
+x <- 2.5
+print(floor(x))    
+
+x <- 3.14159
+print(round(x, digits=2)) 
 ```
 
 **Output:**
 
-```
-[1] 4.5
-[1] -4
-[1] -5
+```text
 [1] 4
+[1] 5
+[1] 2
+[1] 3.14
 ```
 
-**String Functions (دوال نصية)**
+#### String Functions (دوال نصية)
 
-- `substr(x, start, stop)`: Extracts a piece of text.
-    
-- `toupper(x)`: Converts text to UPPERCASE (Capital letters).
-    
-- `paste(...)`: Glues text pieces together.
-    
+  * `substr(x, start, stop)`: Extracts a piece of text.
+  * `paste(..., sep="")`: Glues text pieces together.
+  * `toupper(x)` / `tolower(x)`: Converts text to UPPERCASE or lowercase.
+
+<!-- end list -->
 
 ```r
-text <- "GoodMorning"
-print(substr(text, 1, 4))   # Get first 4 letters
-print(toupper("hello"))     # Make capital
-print(paste("Data", "Science")) # Combine words
+a <- "987654321"
+print(substr(a, 3, 3))   
+
+print(paste('one', 2, 'three')) 
+
+st1 <- "shuBHAm"
+print(toupper(st1)) 
 ```
 
 **Output:**
 
+```text
+[1] "7"
+[1] "one 2 three"
+[1] "SHUBHAM"
 ```
-[1] "Good"
-[1] "HELLO"
-[1] "Data Science"
+
+#### Statistical Functions (دوال إحصائية)
+
+  * `mean(x)`: The Average (المتوسط).
+  * `median(x)`: The Middle Value (الوسيط).
+  * `sd(x)`: Standard Deviation (الانحراف المعياري).
+  * `range(x)`: Gives the Min and Max values.
+  * `sum(x)`: Adds all numbers together.
+
+<!-- end list -->
+
+```r
+a <- c(0:10, 40)
+print(mean(a))   
+print(sd(a))     
+print(median(a)) 
+print(sum(a))    
 ```
 
-**Statistical Functions (دوال إحصائية)**
+**Output:**
 
-- `mean(x)`: The Average (المتوسط).
-    
-- `median(x)`: The Middle Value (الوسيط).
-    
-- `range(x)`: Gives the Min and Max values.
-    
-- `sum(x)`: Adds all numbers together.
-    
+```text
+[1] 7.916667
+[1] 10.58694
+[1] 5.5
+[1] 95
+```
 
-### **2. User-Defined Functions (إنشاء دالة خاصة)**
+### 2\. User-Defined Functions (إنشاء دالة خاصة)
 
 If you need a specific tool that R doesn't have, you can build it.
 
@@ -536,28 +552,24 @@ If you need a specific tool that R doesn't have, you can build it.
 ```r
 function_name <- function(arg1, arg2) {
    # Body: What the function does
-   result <- arg1 + arg2
-   print(result)
+   return_value
 }
 ```
 
-**Course Example:** Creating a function to print squares of numbers.
+**Course Example: Printing Squares**
 
 ```r
-new.function <- function(a) {
-    for(i in 1:a) {
-        b <- i^2
-        print(b)
+new.function <- function() {
+    for(i in 1:5) {
+        print(i^2)
     }
 }
-
-# Calling the function with 5
-new.function(5)
+new.function()
 ```
 
 **Output:**
 
-```
+```text
 [1] 1
 [1] 4
 [1] 9
@@ -565,48 +577,57 @@ new.function(5)
 [1] 25
 ```
 
+-----
 
-## **Chapter 7: Handling Real Files (التعامل مع الملفات)**
-
+## Chapter 7: Handling Real Files (التعامل مع الملفات)
 
 In real data analysis, you don't type data manually; you load it from files.
 
-### **1. Where are my files? (مسار العمل)**
+### 1\. Where are my files? (مسار العمل)
 
 Before reading a file, R needs to know which folder to look in.
 
-- `getwd()`: Get Working Directory (Where am I now?).
-    
-- `setwd("path")`: Set Working Directory (Go to this folder).
-    
+  * `getwd()`: Get Working Directory (Where am I now?).
+  * `setwd("path")`: Set Working Directory (Go to this folder).
+
+<!-- end list -->
 
 ```r
 print(getwd())
-# setwd("C:/Users/Student/Documents") 
+# setwd("C:/Users/ajeet") 
 ```
 
-### **2. CSV Files (ملفات مفصولة بفواصل)**
+**Output:**
+
+```text
+[1] "C:/Users/ajeet/R"
+```
+
+### 2\. CSV Files (ملفات مفصولة بفواصل)
 
 This is the most common format for data.
 
-- **Reading:** Use `read.csv()`.
-    
+  * **Reading:** Use `read.csv()`.
+
+<!-- end list -->
 
 ```r
+# Reading a file named "record.csv"
 data <- read.csv("record.csv")
 print(data)
 ```
 
-**Output:** (Example of what it might look like)
+**Output:** (Example)
 
-```
+```text
   id    name salary start_date       dept
 1  1 Shubham  613.3 2012-01-01         IT
 2  2  Arpita  525.2 2013-09-23 Operations
 ```
 
-- **Writing:** Use `write.csv()` to save your analysis to a new file.
-    
+  * **Writing:** Use `write.csv()` to save your analysis to a new file.
+
+<!-- end list -->
 
 ```r
 # Filter: Get employees who joined after 2014
@@ -616,51 +637,39 @@ details <- subset(data, as.Date(start_date) > as.Date("2014-01-01"))
 write.csv(details, "output.csv")
 ```
 
-### **3. Excel Files (ملفات إكسل)**
+### 3\. Excel Files (ملفات إكسل)
 
 R needs a special package called `xlsx` to read Excel files.
 
-1. **Install:** `install.packages("xlsx")`
-    
-2. **Load:** `library("xlsx")`
-    
-3. **Read:** `read.xlsx("filename.xlsx", sheetIndex = 1)`
-    
+1.  **Install:** `install.packages("xlsx")`
+2.  **Load:** `library("xlsx")`
+3.  **Read:** `read.xlsx("filename.xlsx", sheetIndex = 1)`
 
-### **4. JSON & XML (ملفات الويب)**
+<!-- end list -->
 
-- **JSON:** Use the `rjson` package and `fromJSON()` function.
-    
-- **XML:** Use the `XML` package and `xmlToDataFrame()` function.
-    
+```r
+library("xlsx")
+excel_data <- read.xlsx("employee.xlsx", sheetIndex = 1)
+print(excel_data)
+```
 
+### 4\. JSON & XML Files
 
-## **Chapter 8: The Analyst at Work (الإحصاء والتحليل)**
+  * **JSON:** Use the `rjson` package and `fromJSON()` function.
+  * **XML:** Use the `XML` package and `xmlToDataFrame()` function.
 
+-----
+
+## Chapter 8: The Analyst at Work (الإحصاء والتحليل)
 
 Now we analyze the data to find patterns.
 
-### **1. Descriptive Statistics (الإحصاء الوصفي)**
+### 1\. Descriptive Statistics (الإحصاء الوصفي)
 
 Summarizing your data with single numbers.
 
-**A. Central Tendency (نزعة مركزية)**
-
-- **Mean (المتوسط):** The average.
-    
-- **Median (الوسيط):** The exact middle number.
-    
-
-B. Dispersion (التشتت)
-
-How "spread out" is the data?
-
-- **Variance ($\sigma^2$):** How far numbers are from the mean.
-    
-- **Standard Deviation ($\sigma$):** The average distance from the mean.
-    
-- **Range:** Max minus Min.
-    
+  * **Central Tendency:** Mean (Average), Median (Middle), Mode (Most frequent).
+  * **Dispersion:** Variance (Spread), Standard Deviation (Avg distance from mean), Range (Max - Min).
 
 **Course Example:**
 
@@ -674,45 +683,42 @@ print(sd(data))
 
 **Output:**
 
+```text
+[1] 30       
+[1] 30       
+[1] 15.81139 
 ```
-[1] 30       # Mean
-[1] 30       # Median
-[1] 15.81139 # Standard Deviation
-```
 
-### **2. Inferential Statistics (الإحصاء الاستنتاجي)**
+### 2\. Inferential Statistics (الإحصاء الاستنتاجي)
 
-Testing hypotheses (Testing a guess).
+Testing hypotheses.
 
-T-Test (اختبار T)
+**T-Test (اختبار T)**
+Compares two groups to see if they are actually different.
 
-Compares two groups to see if they are actually different (e.g., spending in two different cities).
-
-```
+```r
 # Compare spending in Cleveland vs New York
 # var.equal = TRUE means we assume variances are equal
 t.test(Spenders.Cleve, Spenders.NY, var.equal = TRUE)
 ```
 
-Chi-Square Test (مربع كاي)
+**Chi-Square Test (مربع كاي)**
+Used for categorical data.
 
-Used for categorical data (e.g., finding the relationship between car type and safety).
-
-```
+```r
 # 'car_data' is a table of categories
 chisq.test(car_data)
 ```
 
-### **3. Correlations (الارتباط)**
+### 3\. Correlations (الارتباط)
 
-Do two things move together? (e.g., Height vs. Weight).
+Do two things move together?
 
-- **+1:** Perfect Positive (Both go up).
-    
-- **-1:** Perfect Negative (One goes up, one goes down).
-    
-- **0:** No relation.
-    
+  * **+1:** Perfect Positive.
+  * **-1:** Perfect Negative.
+  * **0:** No relation.
+
+<!-- end list -->
 
 ```r
 x <- c(1, 2, 3, 4, 5)
@@ -724,15 +730,13 @@ cor(x, y)
 
 **Output:**
 
-```
+```text
 [1] 1
 ```
 
-_(This means a perfect positive relationship)._
+### 4\. Regression (الانحدار)
 
-### **4. Regression (الانحدار)**
-
-Predicting one variable based on another using a formula ($y = b_0 + b_1x$).
+Predicting one variable based on another ($y = b_0 + b_1x$).
 
 ```r
 # Create a linear model (lm)
@@ -740,6 +744,16 @@ model <- lm(y ~ x)
 summary(model)
 ```
 
----
+**Output:**
 
-This completes your full R Programming Course Guide!
+```text
+Call:
+lm(formula = y ~ x)
+
+Coefficients:
+(Intercept)            x  
+  1.589e-15    2.000e+00  
+```
+
+```
+```
