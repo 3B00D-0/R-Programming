@@ -1,6 +1,6 @@
-# The STEM Teacher's Guide to R Programming
+# Guide to R Programming
 
-Welcome to the STEM Teacher's Guide to R. This repository serves as a comprehensive reference for learning R programming, covering everything from data foundations to statistical analysis, based on the FCI Minia University Data Science curriculum.
+Welcome to the Guide to R. This repository serves as a comprehensive reference for learning R programming, covering everything from data foundations to statistical analysis, based on the FCI Minia University Data Science curriculum.
 
 ## Table of Contents
 
@@ -1091,4 +1091,4 @@ For questions or contributions, please open an issue on GitHub.
 ---
 
 **Course Reference:** FCI Minia University - Data Science Labs [1-9]  
-**Last Updated:** December 2024
+**Last Updated:** December 2025
