@@ -20,6 +20,8 @@ Before writing code, we must define **Data**. Data is split into two main types.
 
 ### 1. Types of Data (أنواع البيانات)
 
+<img width="1024" height="555" alt="types-of-data-1024x555-1" src="https://github.com/user-attachments/assets/89573deb-2035-4074-ba04-dfeab26bf557" />
+
 - **Quantitative (كمي):** Numbers you can count or measure.
     - **Discrete (منفصل):** Whole numbers only.
         - _Classroom Example:_ Number of students (You can't have 2.5 students).
