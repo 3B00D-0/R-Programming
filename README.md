@@ -13,7 +13,6 @@ Welcome to the STEM Teacher's Guide to R. This repository serves as a comprehens
 7. [Chapter 7: Handling Real Files (التعامل مع الملفات)](#chapter-7-handling-real-files-التعامل-مع-الملفات)
 8. [Chapter 8: The Analyst at Work (الإحصاء والتحليل)](#chapter-8-the-analyst-at-work-الإحصاء-والتحليل)
 
----
 
 ## Chapter 1: The Foundations (أساسيات البيانات)
 
@@ -33,7 +32,6 @@ Before writing code, we must define **Data**. Data is split into two main types.
     - **Ordinal (ترتيبي):** Categories **with a ranking order**.
         - _Classroom Example:_ Ratings (Excellent, Good, Poor), T-Shirt Size (S, M, L).
 
----
 
 ## Chapter 2: The Grammar of R (قواعد لغة R)
 
@@ -163,7 +161,6 @@ var <- "text"     # Now Character
 var <- TRUE       # Now Logical
 ```
 
----
 
 ## Chapter 3: The Toolkit (Operators)
 
@@ -295,7 +292,6 @@ print(t)
 [2,]   37  117
 ```
 
----
 
 ## Chapter 4: Organizing Data (Data Structures)
 
@@ -410,7 +406,6 @@ print(factor_data)
 Levels: A B C
 ```
 
----
 
 ## Chapter 5: Controlling Flow (التحكم في التكرار والقرارات)
 
@@ -542,7 +537,6 @@ for (val in x) {
 [1] 5
 ```
 
----
 
 ## Chapter 6: The Toolkit (Functions)
 
@@ -667,7 +661,6 @@ new.function(5)
 [1] 25
 ```
 
----
 
 ## Chapter 7: Handling Real Files (التعامل مع الملفات)
 
@@ -792,7 +785,6 @@ xmldataframe <- xmlToDataFrame("input.xml")
 print(xmldataframe)
 ```
 
----
 
 ## Chapter 8: The Analyst at Work (الإحصاء والتحليل)
 
