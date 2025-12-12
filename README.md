@@ -1,9 +1,4 @@
-Here is the complete **Part 1 (Chapters 1-5)** with the requested outputs added under each code example. This format is ready to copy directly into Obsidian.
-
-
 ## **Chapter 1: The Foundations (أساسيات البيانات)**
-
-_(Source: DS_Lab[1],[2])_
 
 Before writing code, we must define **Data**. In your "Statistics" file, data is split into two main types. This is the language you will use to describe your variables.
 
@@ -33,7 +28,6 @@ Before writing code, we must define **Data**. In your "Statistics" file, data is
 
 ## **Chapter 2: The Grammar of R (قواعد لغة R)**
 
-_(Source: DS_Lab[2],[3])_
 
 To speak to R, you need to know how to create "words" (Variables) and "sentences" (Assignments).
 
@@ -127,7 +121,6 @@ Enter age: 17
 
 ## **Chapter 3: The Toolkit (Operators)**
 
-_(Source: DS_Lab[4])_
 
 Operators are the symbols used to do math or compare logic.
 
@@ -234,7 +227,6 @@ print(!a)     # Flips TRUE to FALSE
 
 ## **Chapter 4: Organizing the Classroom (Data Structures)**
 
-_(Source: DS_Lab[3])_
 
 R has specific ways to organize groups of data.
 
@@ -333,7 +325,6 @@ Levels: A B C
 
 ## **Chapter 5: Controlling Flow (التحكم في التكرار والقرارات)**
 
-_(Source: DS_Lab[5],[6])_
 
 ### **1. Decisions (If / Else)**
 
@@ -466,7 +457,6 @@ for (val in x) {
 
 ## **Chapter 6: The Toolkit (Functions)**
 
-_(Source: DS_Lab[7])_
 
 A **Function (الدالة)** is like a machine. You put raw materials in (Arguments), the machine does the work (Body), and it gives you a finished product (Return Value).
 
@@ -578,7 +568,6 @@ new.function(5)
 
 ## **Chapter 7: Handling Real Files (التعامل مع الملفات)**
 
-_(Source: DS_Lab[8])_
 
 In real data analysis, you don't type data manually; you load it from files.
 
@@ -648,7 +637,6 @@ R needs a special package called `xlsx` to read Excel files.
 
 ## **Chapter 8: The Analyst at Work (الإحصاء والتحليل)**
 
-_(Source: DS_Lab[1],[9])_
 
 Now we analyze the data to find patterns.
 
