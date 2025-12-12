@@ -1,6 +1,3 @@
-Here is the complete course (Part 1 and Part 2) combined into a single, clean markdown file. You can copy this entire block directly into GitHub (e.g., `README.md`) or Obsidian.
-
-````markdown
 # The STEM Teacher’s Guide to R Programming
 
 ## Chapter 1: The Foundations (أساسيات البيانات)
