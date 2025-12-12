@@ -614,6 +614,8 @@ print(sub("England", "UK", st1))
 
 #### Graphics Functions (دوال الرسوم البيانية)
 
+<img width="905" height="830" alt="types" src="https://github.com/user-attachments/assets/76c33834-3ca0-46f7-bafc-50f1335d0557" />
+
 - `plot(x, y, type=...)`: Creates various types of plots.
     - `type="p"`: Points (Scatter plot).
     - `type="l"`: Lines (Line plot).
@@ -832,6 +834,9 @@ print(mode(data))
 
 #### B. Dispersion (التشتت)
 
+<img width="531" height="322" alt="image" src="https://github.com/user-attachments/assets/690c93b6-53c2-4e0b-ae85-39dd7bda9662" />
+
+
 How "spread out" is the data?
 
 - **Variance (σ²):** How far numbers are from the mean.
@@ -900,6 +905,9 @@ print(outliers)
 #### E. Skewness (الالتواء)
 
 Skewness measures how much the distribution deviates from normal.
+
+<img width="648" height="245" alt="skewness" src="https://github.com/user-attachments/assets/a42278af-c0c4-486c-9676-37d14ef9b5d8" />
+
 
 - **Normal Distribution:** Mean = Median = Mode
 - **Right Skewed (Positive):** Mode < Median < Mean
